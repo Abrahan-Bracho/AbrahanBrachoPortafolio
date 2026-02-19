@@ -33,6 +33,9 @@ panelCards.forEach((card, index) => {
 	});
 });
 
+
+
+
 const panelBody = document.querySelector(".panel-body");
 if (panelBody) {
 	panelBody.addEventListener("mouseleave", () => setActiveBall(-1));

@@ -221,14 +221,15 @@ border-radius: 12px;
     width: 100%;
 	color: var(--muted);
 	font-size: 1.3rem;
+	text-align: center;
 }
 
 .panel-detail {
 	color: var(--muted);
-	max-height: 220px;
+	max-height: 280px;
 	overflow: hidden;
 	opacity: 1;
-	transform: translateY(0);
+	transform: translateY(10px);
 	transition: max-height 0.45s ease, opacity 0.45s ease, transform 0.45s ease;
 }
 
