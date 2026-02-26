@@ -11,7 +11,9 @@
 	--border: rgba(79, 127, 189, 0.35);
 	--glow: 0 0 24px rgba(45, 212, 255, 0.35);
 }
-
+html{
+	scroll-behavior: smooth;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -83,18 +85,42 @@ border-radius: 12px;
 	font-size: 0.85rem;
 }
 
-.nav {
+.nav{
 	display: flex;
 	flex-wrap: wrap;
 	gap: 14px;
 	color: var(--muted);
 	font-size: 0.95rem;
 }
-
+.btn-lang{
+	padding: 10px 20px;
+	border-radius: 14px;
+	color: var(--bg);
+	gap: 0;
+	background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+	border: none;
+	box-shadow: var(--glow);
+	cursor: pointer;
+}
+ .btn-lang-select{
+	padding: 10px 10px;
+	gap: 0;
+	background: linear-gradient( rgba(124, 58, 237, 0.3));
+	border-radius: 14px;
+}
+.none{
+	display: none;
+	transition: 2s;
+	
+}
 .nav a:hover {
 	color: var(--text);
 }
-
+.btn.primary {
+	background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+	color: #050913;
+	box-shadow: var(--glow);
+}
 .btn {
 	padding: 12px 20px;
 	border-radius: 999px;
@@ -106,11 +132,6 @@ border-radius: 12px;
 	border: 1px solid transparent;
 }
 
-.btn.primary {
-	background: linear-gradient(135deg, var(--primary), var(--primary-strong));
-	color: #050913;
-	box-shadow: var(--glow);
-}
 
 .btn.ghost {
 	border-color: var(--border);
